@@ -7,6 +7,27 @@
 #include "list.h"
 #include "stack.h"
 
+typedef struct{
+    char nombre[51];
+    int puntosHabilidad;
+    List* inventario;
+    Stack*pilaAcciones;
+}Jugador;
+
+typedef struct{
+  char nombre[51];
+  List* listaJugadoresConItem;
+}ItemMapa;
+
+typedef struct {
+  char nombre[51];
+} Item;
+
+typedef struct {
+char nombreAccion[51];
+char item[51];
+}Accion;
+
 /*
   función para comparar claves de tipo string
   retorna 1 si son iguales
