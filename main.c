@@ -66,7 +66,78 @@ int lower_than_int(void * key1, void * key2) {
 
 
 int main() {
- 
+    char opcion[11];
+    bool ejecucion = true;
+
+     while (ejecucion) {
+      printf("\n1.-CREAR PERFIL JUGADOR\n");
+      printf("2.-MOSTRAR PERFIL JUGADOR\n");
+      printf("3.-AGREGAR ITEM A JUGADOR\n");
+      printf("4.-ELIMINAR ITEM DE JUGADOR\n");
+      printf("5.-AGREGAR PUNTOS DE HABILIDAD A JUGADOR\n");
+      printf("6.-MOSTRAR JUGADORES CON ITEM ESPECÍFICO\n");
+      printf("7.-DESHACER ULTIMA ACCION DE UN JUGADOR\n");
+      printf("8.-EXPORTAR DATOS DE JUGADORES A ARCHIVO DE TEXTO\n");
+      printf("9.-CARGAR DATOS DE JUGADORES DESDE UN ARCHIVO DE TEXTO\n");
+      printf("PRESIONE 0 PARA SALIR\n\n");
+
+    scanf("%10s[\n]", opcion);
+    getchar();
+
+    if (isdigit(opcion[0])) {
+      int opcionNumero = atoi(opcion);
+
+      switch (opcionNumero) {
+      case 1:
+        
+        break;
+      case 2:
+        
+        break;
+
+      case 3:
+        
+        break;
+
+      case 4:
+        
+        break;
+
+      case 5:
+        
+        break;
+
+      case 6:
+        
+        break;
+
+      case 7:
+        
+        break;
+
+      case 8:
+        
+        break;
+
+      case 9:
+        
+        break;
+
+      case 0:
+        printf("QUE TENGA BONITA TARDE, ADIÓS\n");
+        ejecucion = false;
+        break;
+
+      default:
+        printf("\nSELECCIONE UNA OPCIÓN VÁLIDA\n\n");
+        break;
+      }
+    } else {
+      if (isalpha(opcion[0]))
+        printf("\nSELECCIONE UNA OPCIÓN VÁLIDA\n\n");
+    }
+  }
+
     return 0;
 }
 
